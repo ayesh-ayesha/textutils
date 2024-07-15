@@ -2,13 +2,13 @@
 
 import './App.css';
 import Alert from './components/Alert.js';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import WorkText from './components/WorkText.js';
 // import Counter from './components/Counter';
 import React,{useState} from 'react';
 import './components/style.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 // const router = createBrowserRouter([
@@ -66,18 +66,20 @@ function App() {
  }
   return (
 <>
-<BrowserRouter>
+{/* <BrowserRouter> */}
 <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
 <div className="container my-3">
-  <Alert alert={alert}/>
+ <Alert alert={alert}/>
   
-  <Routes>
-     <Route exact path="/about" element={<About/>}></Route>
-     <Route exact path="/" element={<WorkText showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>}></Route>
-  </Routes>
+   {/* <Routes>  */}
+     {/* <Route exact path="/about" element={<About/>}></Route>
+     <Route exact path="/" element={< */}
+    < WorkText showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>
+    {/* }></Route>
+  </Routes>  */}
   {/* <Counter title="Counter"/>  */}
   </div>
-  </BrowserRouter>
+  {/* </BrowserRouter> */}
   </>
 
     
